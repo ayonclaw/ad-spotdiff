@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brasswater Conservatory</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><div><p class="eyebrow">THE ARCHIVE OF SMALL CHANGES / FIELD NOTE 01</p><h1>Brasswater <i>Conservatory</i></h1></div><button id="restart">Restart [R]</button></header>
+<section class="toolbar"><span id="remaining">5 differences remain</span><span id="penalties">0 penalties</span><button id="hint">Hint [H] · +2 penalties</button></section>
+<section class="pair" aria-label="Two views of the conservatory">
+<article><h2><span>01 / THE ORIGINAL</span><small>Before the gardener arrived</small></h2><div class="picture" id="left" tabindex="0" role="button" aria-label="Original picture: use arrow keys and Enter to inspect"><img src="original.svg" alt="A botanical glasshouse with a potting bench and hanging plants"><div class="marks"></div><div class="cursor" hidden></div></div></article>
+<article><h2><span>02 / THE ALTERED</span><small>Something is not quite the same</small></h2><div class="picture" id="right" tabindex="0" role="button" aria-label="Altered picture: use arrow keys and Enter to inspect"><img src="altered.svg" alt="The same glasshouse with five changed details"><div class="marks"></div><div class="cursor" hidden></div></div></article>
+</section>
+<footer><p id="status" role="status" aria-live="polite">Look closely. The smallest things tell the story.</p><small>Click either picture · Arrows + Enter to inspect · H for a hint · R to restart</small></footer>
+<section id="intro" class="veil"><div class="card"><p class="eyebrow">A QUIET OBSERVATION GAME</p><h2>Brasswater<br><i>Conservatory</i></h2><p>The gardener has been here.<br>Find five changes between two moments.</p><p class="fine">Click a changed detail in either picture.<br>A wrong guess adds one penalty. Take your time.</p><button id="start">Open the glasshouse</button></div></section>
+<section id="win" class="veil" hidden><div class="card"><p class="eyebrow">FIELD NOTE COMPLETE</p><h2>Every little<br><i>thing, noticed.</i></h2><p id="result"></p><button id="again">Return to the glasshouse</button></div></section>
+</main><script type="module" src="hunt.js"></script>
+</body>
+</html>
